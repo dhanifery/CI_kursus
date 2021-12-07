@@ -6,10 +6,13 @@ class Dashboard extends CI_Controller{
      parent::__construct();
      $this->load->helper('url');
   }
-  function index()
+  public function index()
   {
-    $data['judul']='Halaman Depan';
-    $this->load->view('dashboard',$data);
+    $data['judul']='Dashboard';
+    $this->load->view('v_header',$data);
+    $this->load->view('v_header2',$data);
+    $this->load->view('v_dashadmin',$data);
+    $this->load->view('v_footer',$data);
   }
 
 }
