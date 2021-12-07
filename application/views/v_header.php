@@ -25,7 +25,7 @@
            $(this).parent().toggleClass("active");
            $(".akun_profil , .notif").removeClass("active");
          });
-       });  class="nav-link"
+       });
 
      </script>
 
@@ -44,35 +44,35 @@
                <span class="tooltip">Search</span>
             </li>
             <li>
-              <a class="nav-link" href="<?php echo base_url() . 'Dashboard'; ?>">
+              <a href="<?php echo base_url() . 'Dashboard'; ?>">
                 <i class='bx bxs-dashboard'></i>
                 <span class="links_name">Dashboard</span>
               </a>
                <span class="tooltip">Dashboard</span>
             </li>
             <li>
-             <a class="nav-link" href="<?php echo base_url() . 'Crud'; ?>">
+             <a href="<?php echo base_url() . 'Crud'; ?>">
                <i class='bx bxs-calendar' ></i>
                <span class="links_name">Jadwal</span>
              </a>
              <span class="tooltip">Jadwal</span>
            </li>
            <li>
-             <a class="nav-link" href="<?php echo base_url() . 'Crud_peserta'; ?>">
+             <a href="<?php echo base_url() . 'Crud_peserta'; ?>">
                <i class='bx bxs-group' ></i>
                <span class="links_name">Data Peserta</span>
              </a>
              <span class="tooltip">Data Peserta</span>
            </li>
            <li>
-             <a class="nav-link" href="<?php echo base_url() . 'Crud_instruktur'; ?>">
+             <a href="<?php echo base_url() . 'Crud_instruktur'; ?>">
                <i class='bx bxs-group' ></i>
                <span class="links_name">Data Instruktur</span>
              </a>
              <span class="tooltip">Data Instuktur</span>
            </li>
            <li>
-             <a class="nav-link" href="#">
+             <a href="#">
                <i class='bx bx-cog' ></i>
                <span class="links_name">Setting</span>
              </a>
@@ -82,11 +82,12 @@
                <div class="profile-details">
                  <div class="name_job">
                    <div class="name">Log Out</div>
+                   <a  href="<?= site_url('Auth') ?>">
+                     <i class='bx bx-log-out' id="log_out" ></i>
+                  </a>
                  </div>
                </div>
-               <a href="<?= site_url('Auth') ?>">
-                 <i class='bx bx-log-out' id="log_out" ></i>
-              </a>
+
            </li>
           </ul>
         </div>

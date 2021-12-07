@@ -137,7 +137,7 @@
   background: #FCF4F4;
   color: #31333E;
 }
-.sidebar li a.nav-link{
+.sidebar li a{
   display: flex;
   height: 100%;
   width: 100%;
@@ -169,10 +169,7 @@
   transition: all 0.5s ease;
   color: #1B1E2A;
 }
-.sidebar li a.nav-link:hover{
-  background: #FCF4F4;
-  width: 100%;
-}
+
 
 .sidebar li i{
   height: 50px;
@@ -228,7 +225,7 @@
 .home-section{
   position: relative;
   background: #f2e4e4;
-  min-height: 100vh;
+  min-height: 96vh;
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
@@ -763,6 +760,19 @@
 .tgl_kalender .lokasi span{
   color: 1B1E2A;
   opacity: 0.8;
+}
+.copyright {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.copyright .wrapper{
+  font-size: 12px;
+  position: fixed;
+  margin-left: 90px;
+
+
 }
 @media (max-width: 420px) {
   .sidebar li .tooltip{

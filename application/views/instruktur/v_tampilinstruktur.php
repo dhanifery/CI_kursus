@@ -13,14 +13,6 @@
         <div class="sub-judul">
           <p>List Instruktur</p>
         </div>
-        <div class="excel">
-          <a href="<?php site_url().'Crud_instruktur/excel' ?>" class="btn-excel-1">
-            <i class='bx bx-table'></i> Excel
-          </a>
-            <a href="#" class="btn-excel-2">
-              <i class='bx bx-download'></i></i> Download
-            </a>
-        </div>
         <div class="row-input">
           <div class="col">
             <form action="<?php site_url('Crud_instruktur/keyword') ?>" method="post">

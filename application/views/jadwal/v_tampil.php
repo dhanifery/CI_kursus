@@ -9,15 +9,7 @@
     <div class="content_2" style="background:#fff;">
       <div class="tambahdata">
         <div class="sub-judul">
-          <p>List Peserta</p>
-        </div>
-        <div class="excel">
-          <a href="<?php site_url().'Crud/excel' ?>" class="btn-excel-1">
-            <i class='bx bx-table'></i> Excel
-          </a>
-            <a href="#" class="btn-excel-2">
-              <i class='bx bx-download'></i></i> Download
-            </a>
+          <p>List Jadwal</p>
         </div>
         <div class="row-input">
           <div class="col">
