@@ -67,10 +67,13 @@ class Crud_instruktur extends CI_Controller{
        $this->pagination->initialize($config);
 
         $data['judul'] ='Data Instruktur';
+        $data['user'] = $this->db->get_where('user',['name'=>
+        $this->session->userdata('name')])->row_array();
        $data['start'] = $this->uri->segment(3);
        $data['instruktur'] = $this->M_instruktur->tampil_data($config['per_page'],$data['start'],$data['keyword'])->result();
        $this->load->view('v_header',$data);
-       $this->load->view('v_header2',$data);
+       $this->load->view('v_sidebar',$data);
+       $this->load->view('v_profil',$data);
        $this->load->view('instruktur/v_tampilinstruktur', $data);
        $this->load->view('v_footer',$data);
 
@@ -91,9 +94,12 @@ class Crud_instruktur extends CI_Controller{
        if ($this->form_validation->run()== false)
         {
           $data['judul']='Data Instruktur';
+          $data['user'] = $this->db->get_where('user',['name'=>
+          $this->session->userdata('name')])->row_array();
           $data['instruktur'] = $this->M_instruktur->index()->result();
           $this->load->view('v_header',$data);
-          $this->load->view('v_header2',$data);
+          $this->load->view('v_sidebar',$data);
+          $this->load->view('v_profil',$data);
           $this->load->view('instruktur/v_inputinstruktur',$data);
           $this->load->view('v_footer',$data);
         }
@@ -139,9 +145,12 @@ class Crud_instruktur extends CI_Controller{
       {
         $where = array('id_instr' => $id_instr );
         $data['judul']='Data instruktur';
+        $data['user'] = $this->db->get_where('user',['name'=>
+        $this->session->userdata('name')])->row_array();
         $data['instruktur']=$this->M_instruktur->edit_data($where,'instruktur')->result();
         $this->load->view('v_header',$data);
-        $this->load->view('v_header2',$data);
+        $this->load->view('v_sidebar',$data);
+        $this->load->view('v_profil',$data);
         $this->load->view('instruktur/v_editinstruktur',$data);
         $this->load->view('v_footer',$data);
       }

@@ -25,12 +25,11 @@ class Crud_peserta extends CI_Controller{
 
        $this->db->like('username',$data['keyword']);
        $this->db->from('peserta');
-
-       $config['base_url']='http://localhost/CI/index.php/Crud_peserta/index';
        $config['total_rows'] = $this->db->count_all_results();
-       $config['num_links']=1;
-
        $data['total_rows'] = $config['total_rows'];
+       $config['base_url']='http://localhost/CI/Crud_peserta/index';
+
+       $config['num_links']=1;
        $config['per_page']=7;
        $config['full_tag_open']='<nav aria-label="Page navigation example"><ul class="pagination">';
        $config['full_tag_close']='</ul></nav>';
@@ -67,10 +66,13 @@ class Crud_peserta extends CI_Controller{
        $this->pagination->initialize($config);
 
        $data['judul'] ='Data Peserta';
+       $data['user'] = $this->db->get_where('user',['name'=>
+       $this->session->userdata('name')])->row_array();
        $data['start'] = $this->uri->segment(3);
        $data['peserta'] = $this->M_peserta->tampil_data($config['per_page'],$data['start'],$data['keyword'])->result();
        $this->load->view('v_header',$data);
-       $this->load->view('v_header2',$data);
+       $this->load->view('v_sidebar',$data);
+       $this->load->view('v_profil',$data);
        $this->load->view('peserta/v_tampilpeserta', $data);
        $this->load->view('v_footer',$data);
 
@@ -91,9 +93,12 @@ class Crud_peserta extends CI_Controller{
        if ($this->form_validation->run()== false)
         {
           $data['judul']='Data Peserta';
+          $data['user'] = $this->db->get_where('user',['name'=>
+          $this->session->userdata('name')])->row_array();
           $data['peserta'] = $this->M_peserta->index()->result();
           $this->load->view('v_header',$data);
-          $this->load->view('v_header2',$data);
+          $this->load->view('v_sidebar',$data);
+          $this->load->view('v_profil',$data);
           $this->load->view('peserta/v_inputpeserta',$data);
           $this->load->view('v_footer',$data);
         }
@@ -137,9 +142,12 @@ class Crud_peserta extends CI_Controller{
       {
         $where = array('id_peserta' => $id_peserta );
         $data['judul']='Data Peserta';
+        $data['user'] = $this->db->get_where('user',['name'=>
+        $this->session->userdata('name')])->row_array();
         $data['peserta']=$this->M_peserta->edit_data($where,'peserta')->result();
         $this->load->view('v_header',$data);
-        $this->load->view('v_header2',$data);
+        $this->load->view('v_sidebar',$data);
+        $this->load->view('v_profil',$data);
         $this->load->view('peserta/v_editpeserta',$data);
         $this->load->view('v_footer',$data);
       }

@@ -26,4 +26,10 @@ class M_relasi extends CI_Model
   {
     return $this->db->get('jadwal')->num_rows();
   }
+  // public function userRelasi($id = null)
+  // {
+  //   $this->db->select('user.*,')
+  // }
+
+
 }

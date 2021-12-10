@@ -68,15 +68,16 @@
           </div>
           <div class="akun_profil">
             <div class="icon_wrap">
-              <span class="name">Feri</span>
+              <img src="<?= base_url('assets/img/profil/') . $user['image']; ?>" >
+              <span class="name"><?= $user['name']; ?></span>
               <i class='bx bxs-chevron-down arrow' ></i>
             </div>
             <div class="profile_dd">
               <ul class="profile_ul">
-                <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class='bx bx-user' ></i>
+                <li class="profile_li"><a class="profile" href="<?= site_url('User/profil') ?>"><span class="picon"><i class='bx bx-user' ></i>
                 </span> My Profile</a>
                 </li>
-                <li><a class="logout" href="<?= site_url('Auth') ?>"><span class="picon"><i class='bx bx-log-out'></i></span> Log Out </a></li>
+                <li><a class="logout" href="<?= site_url('Auth/logout') ?>" onclick="return confirm('Apakah anda yakin Log out?')"><span class="picon"><i class='bx bx-log-out'></i></span> Log Out </a></li>
               </ul>
             </div>
           </div>

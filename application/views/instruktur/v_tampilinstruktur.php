@@ -66,7 +66,8 @@
                       <a href="<?=site_url('Crud_instruktur/edit/'.$ins->id_instr) ?>" class="btn-edit">
                         <i class='bx bxs-edit-alt'></i>edit
                       </a>
-                      <a href="<?=site_url('Crud_instruktur/hapus/'.$ins->id_instr) ?>" onclick="return confirm('Apakah anda yakin ?')" class="btn-hapus">
+                      <a href="<?=site_url('Crud_instruktur/hapus/'.$ins->id_instr) ?>" onclick="return confirm('Apakah anda yakin ?')"
+                        class="btn-hapus">
                         <i class='bx bxs-trash-alt' ></i>delete
                       </a>
                     </td>

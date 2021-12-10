@@ -273,7 +273,7 @@
   align-items: center;
   justify-content: center;
   height: 40px;
-  width: 200px;
+  width: 250px;
   border-radius: 10px;
 }
 .home-section .navbar .icon_wrap{
@@ -283,7 +283,7 @@
 .home-section .navbar .notif,
 .home-section .navbar .pesan,
 .home-section .navbar .akun_profil{
-  margin-right: 20px;
+  margin-right:20px;
   position: relative;
 }
 .notification_dd,
@@ -347,7 +347,7 @@
 .akun_profil .icon_wrap,
 .akun_profil .navbar{
   display: flex;
-  margin-right: -32px;
+  margin-right: -52px;
   align-items: center;
 }
 .akun_profil .name{
@@ -362,7 +362,7 @@
   color: #3b80f9;
 }
 .akun_profil .icon_wrap img{
-  height: 20;
+  height: 20px;
   width: 20px;
 }
  .akun_profil .profile_dd{
@@ -373,7 +373,8 @@
 }
 
  .akun_profil.profile_dd ul li {
-    border-bottom: 1px solid #f1f2f4;
+    border-bottom: 1px solid #f1f2f4
+    cursor:pointer;
 }
 
 .akun_profil .profile_dd ul li  a{
@@ -381,6 +382,7 @@
     padding: 10px 25px;
     position: relative;
     color: #1B1E2A;
+    cursor: pointer;
 }
 
 .akun_profil .profile_dd ul li  a .picon{
@@ -403,6 +405,7 @@
     background: transparent;
     cursor: default;
     color: #7f8db0;
+
 }
 .akun_profil.active .profile_dd,
 .notif.active .notification_dd,
@@ -778,24 +781,6 @@
 
 
 }
-
-
-/* USER PROFIL; */
-.content-ds .row-no-gutter{
-  margin:10px;
-  display: flex;
-  flex-direction: column;
-}
-.content-ds .row-no-gutter img{
-  width: 100px;
-  height: 100px;
-}
-
-
-
-
-
-
 
 
 @media (max-width: 420px) {

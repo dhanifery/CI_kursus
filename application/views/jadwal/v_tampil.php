@@ -8,6 +8,9 @@
     </style>
     <div class="content_2" style="background:#fff;">
       <div class="tambahdata">
+        <a href="<?=base_url('Crud/tambah')?>" class="btn-peserta">
+            <i class='bx bxs-user-plus'></i>Tambah
+        </a>
         <div class="sub-judul">
           <p>List Jadwal</p>
         </div>
