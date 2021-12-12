@@ -23,7 +23,7 @@ class Auth extends CI_Controller{
     ]);
     if ($this->form_validation->run() == false){
 
-      $data['title']='B I S T I R | Login Registrasi ';
+      $data['title']='B I S T I R | Login';
       $this->load->view('templates/auth_header',$data);
       $this->load->view('halamanlogin/auth_login');
       $this->load->view('templates/auth_footer');

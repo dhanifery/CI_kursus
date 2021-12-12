@@ -9,7 +9,11 @@
   text-decoration: none;
   list-style: none;
 }
-.sidebar{
+
+
+/* SIDE BAR */
+
+ .sidebar{
   position: fixed;
   left: 0;
   top: 0;
@@ -223,6 +227,14 @@
   width: 50px;
   background: none;
 }
+
+
+
+
+/* HOME SECTION */
+
+
+
 .home-section{
   position: relative;
   background: #f2e4e4;
@@ -415,6 +427,10 @@
 }
 
 
+/* CONTENT */
+
+
+
 .home-section .content{
   display: flex;
   justify-content: space-between;
@@ -517,6 +533,17 @@
   color: #fff;
   font-weight: 500;
 }
+
+
+
+
+
+
+
+/* KALENDER */
+
+
+
 .home-section .content .tgl_kalender{
   margin-top: 33px;
   align-items: center;
@@ -752,6 +779,11 @@
 .month-list > div > div:hover {
     background-color: var(--color-hover);
 }
+
+
+/* LOKASI DAN NO HP */
+
+
 .tgl_kalender .lokasi{
   margin: 10px;
 }
@@ -768,6 +800,15 @@
   color: 1B1E2A;
   opacity: 0.8;
 }
+
+
+
+
+
+/* COPYRIGHT */
+
+
+
 .copyright {
   background-color: #fff;
   display: flex;
@@ -782,6 +823,10 @@
 
 }
 
+
+
+
+/* RESPONSIVE */
 
 @media (max-width: 420px) {
   .sidebar li .tooltip{

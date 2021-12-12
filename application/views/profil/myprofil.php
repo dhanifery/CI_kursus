@@ -1,7 +1,5 @@
 <!DOCTYPE html>
   <head>
-    <meta charset="utf-8">
-    <title>B I S T I R</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/profile/profil.css'); ?>">
   </head>
     <div class="content_ds">

@@ -68,11 +68,10 @@ class Crud extends CI_Controller{
      $data['start'] = $this->uri->segment(3);
      $data['jadwal'] = $this->M_relasi->tampil_data($config['per_page'],$data['start'],$data['keyword'])->result();
      $data['jadwal'] = $this->M_relasi->get_relasi()->result();
-     $this->load->view('v_header',$data);
-     $this->load->view('v_sidebar',$data);
-     $this->load->view('v_profil',$data);
+     $this->load->view('utama/v_header',$data);
      $this->load->view('jadwal/v_tampil', $data);
-     $this->load->view('v_footer',$data);
+     $this->load->view('utama/v_footer',$data);
+
   }
 
     function detail()
@@ -81,11 +80,9 @@ class Crud extends CI_Controller{
       $data['user'] = $this->db->get_where('user',['name'=>
       $this->session->userdata('name')])->row_array();
       $data['jadwal'] = $this->M_relasi->get_relasi()->result();
-      $this->load->view('v_header',$data);
-      $this->load->view('v_sidebar',$data);
-      $this->load->view('v_profil',$data);
+      $this->load->view('utama/v_header',$data);
       $this->load->view('jadwal/v_detail', $data);
-      $this->load->view('v_footer',$data);
+      $this->load->view('utama/v_footer',$data);
     }
     // function tambah()
     //   $this->form_validation->set_rules('password_peserta', 'Password', 'required|min_length[5]',

@@ -5,7 +5,9 @@
    <div class="background_img">
      <div class="cloud">
        <div class="cloud_one">
-           <p>Hai Admin....</p>
+           <p>Hai
+             <?= $user['name']; ?>....
+           </p>
            <p>Semoga harimu menyenangkan</p>
        </div>
      </div>

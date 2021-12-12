@@ -71,11 +71,9 @@ class Crud_instruktur extends CI_Controller{
         $this->session->userdata('name')])->row_array();
        $data['start'] = $this->uri->segment(3);
        $data['instruktur'] = $this->M_instruktur->tampil_data($config['per_page'],$data['start'],$data['keyword'])->result();
-       $this->load->view('v_header',$data);
-       $this->load->view('v_sidebar',$data);
-       $this->load->view('v_profil',$data);
+       $this->load->view('utama/v_header',$data);
        $this->load->view('instruktur/v_tampilinstruktur', $data);
-       $this->load->view('v_footer',$data);
+       $this->load->view('utama/v_footer',$data);
 
     }
 
@@ -97,11 +95,9 @@ class Crud_instruktur extends CI_Controller{
           $data['user'] = $this->db->get_where('user',['name'=>
           $this->session->userdata('name')])->row_array();
           $data['instruktur'] = $this->M_instruktur->index()->result();
-          $this->load->view('v_header',$data);
-          $this->load->view('v_sidebar',$data);
-          $this->load->view('v_profil',$data);
+          $this->load->view('utama/v_header',$data);
           $this->load->view('instruktur/v_inputinstruktur',$data);
-          $this->load->view('v_footer',$data);
+          $this->load->view('utama/v_footer',$data);
         }
         else {
           $username=$this->input->post('username');
@@ -148,11 +144,9 @@ class Crud_instruktur extends CI_Controller{
         $data['user'] = $this->db->get_where('user',['name'=>
         $this->session->userdata('name')])->row_array();
         $data['instruktur']=$this->M_instruktur->edit_data($where,'instruktur')->result();
-        $this->load->view('v_header',$data);
-        $this->load->view('v_sidebar',$data);
-        $this->load->view('v_profil',$data);
+        $this->load->view('utama/v_header',$data);
         $this->load->view('instruktur/v_editinstruktur',$data);
-        $this->load->view('v_footer',$data);
+        $this->load->view('utama/v_footer',$data);
       }
       else {
         $id_instr=$this->input->post('id_instr');

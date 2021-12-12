@@ -26,11 +26,13 @@
              <span class="tooltip">Jadwal</span>
            </li>
            <li>
-             <a href="<?php echo base_url() . 'Crud_peserta'; ?>">
-               <i class='bx bxs-group' ></i>
-               <span class="links_name">Data Peserta</span>
-             </a>
-             <span class="tooltip">Data Peserta</span>
+             <div class="icon-link">
+               <a href="<?php echo base_url() . 'Crud_peserta'; ?>">
+                 <i class='bx bxs-group' ></i>
+                 <span class="links_name">Data Data</span>
+               </a>
+               <span class="tooltip">Data Peserta</span>
+             </div>
            </li>
            <li>
              <a href="<?php echo base_url() . 'Crud_instruktur'; ?>">

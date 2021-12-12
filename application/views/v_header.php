@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/user.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/user.css');?>">
 
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
