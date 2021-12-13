@@ -82,8 +82,6 @@ class Crud_peserta extends CI_Controller{
        $this->form_validation->set_rules('username', 'Nama', 'required|min_length[2]',
         array('min_length'=> '%s Minimal 2 karakter !'));
 
-       $this->form_validation->set_rules('password_peserta', 'Password', 'required|min_length[5]',
-       array('min_length'=> '%s Minimal 5 karakter !'));
        $this->form_validation->set_rules('JK_peserta', 'Jenis Kelamin', 'required');
 
        $this->form_validation->set_message('required', '%s masih kosong, silahkan isi !');
@@ -101,20 +99,18 @@ class Crud_peserta extends CI_Controller{
         else {
           $username=$this->input->post('username');
           $email_peserta=$this->input->post('email_peserta');
-          $password_peserta=$this->input->post('password_peserta');
           $alamat_peserta=$this->input->post('alamat_peserta');
           $no_telp=$this->input->post('no_telp');
           $TTL_peserta=$this->input->post('TTL_peserta');
           $JK_peserta=$this->input->post('JK_peserta');
 
           $data = array(
-             'username' => $username,
-             'email_peserta' => $email_peserta,
-             'password_peserta' => $password_peserta,
-             'alamat_peserta' => $alamat_peserta,
-             'no_telp' => $no_telp,
-             'TTL_peserta' => $TTL_peserta,
-             'JK_peserta' => $JK_peserta
+            'username' => $username,
+            'email_peserta' => $email_peserta,
+            'alamat_peserta' => $alamat_peserta,
+            'no_telp' => $no_telp,
+            'TTL_peserta' => $TTL_peserta,
+            'JK_peserta' => $JK_peserta
           );
           $this->M_peserta->input_data($data, 'peserta');
           if ($this->db->affected_rows() > 0 ) {

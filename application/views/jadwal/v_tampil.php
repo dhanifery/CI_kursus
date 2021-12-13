@@ -52,7 +52,7 @@
                   ?>
                   <tr>
                     <td><?php echo ++$start?></td>
-                    <td><?php echo $j->kd_jadwal?></td>
+                    <td><?php echo $j->kode_jadwal?></td>
                     <td><?php echo $j->instr_name?></td>
                     <td><?php echo $j->peserta_name?></td>
                     <td class="text-center" width="100px">

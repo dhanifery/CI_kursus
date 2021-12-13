@@ -40,12 +40,12 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="<?php echo base_url() . 'Admin'; ?>">
+          <a href="<?php echo base_url() . 'User'; ?>">
             <i class='bx bx-grid-alt' ></i>
             <span class="link_name">Dashboard</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="<?php echo base_url() . 'Admin'; ?>">Dashboard</a></li>
+            <li><a class="link_name" href="<?php echo base_url() . 'User'; ?>">Dashboard</a></li>
           </ul>
         </li>
         <li>
@@ -58,33 +58,21 @@
           </ul>
         </li>
         <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class='bx bx-collection' ></i>
-              <span class="link_name">Data</span>
-            </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Data</a></li>
-            <li><a href="<?php echo base_url() . 'Crud_peserta'; ?>">Data Peserta</a></li>
-            <li><a href="<?php echo base_url() . 'Crud_instruktur'; ?>">Data Instruktur</a></li>
-            <li><a href="<?php echo base_url() . 'Transaksi'; ?>">Data Transaksi</a></li>
-            <li><a href="<?= base_url('Paket') ?>">Data Paket</a></li>
+          <a href="<?php echo base_url() . ''; ?>">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Course</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="<?php echo base_url() . 'Course'; ?>">Course</a></li>
           </ul>
         </li>
         <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class='bx bxl-discourse'></i>
-              <span class="link_name">Course</span>
-            </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Data</a></li>
-            <li><a href="<?php echo base_url() . ''; ?>">Form Data diri</a></li>
-            <li><a href="<?php echo base_url() . ''; ?>">Info Paket</a></li>
+          <a href="<?php echo base_url() . ''; ?>">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="link_name">Info Paket</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="<?php echo base_url() . 'Paket'; ?>">Info Paket</a></li>
           </ul>
         </li>
         <li>
@@ -194,7 +182,7 @@
                     </div>
                     <div class="profile_dd">
                       <ul class="profile_ul">
-                        <li class="profile_li"><a class="profile" href="<?= site_url('Admin/profil') ?>"><span class="picon"><i class='bx bx-user' ></i>
+                        <li class="profile_li"><a class="profile" href="<?= site_url('User/profil') ?>"><span class="picon"><i class='bx bx-user' ></i>
                         </span> My Profile</a>
                         </li>
                         <li><a class="logout" href="<?= site_url('Auth/logout') ?>" onclick="return confirm('Apakah anda yakin Log out ?')"><span class="picon"><i class='bx bx-log-out'></i></span> Log Out </a></li>

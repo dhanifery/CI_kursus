@@ -62,9 +62,9 @@
                     <td width="120px;"><?php echo $psr->JK_peserta?></td>
 
                     <td class="text-center" width="150px">
-                      <a href="<?=site_url('Crud_peserta/edit/'.$psr->id_peserta) ?>" class="btn-edit">
+                      <!-- <a href="<?=site_url('Crud_peserta/edit/'.$psr->id_peserta) ?>" class="btn-edit">
                         <i class='bx bxs-edit-alt'></i>edit
-                      </a>
+                      </a> -->
                       <a href="<?=site_url('Crud_peserta/hapus/'.$psr->id_peserta) ?>" onclick="return confirm('Apakah anda yakin ?')" class="btn-hapus">
                         <i class='bx bxs-trash-alt' ></i>delete
                       </a>

@@ -3,8 +3,7 @@
  *
  */
 class M_instruktur extends CI_Model
-{
-
+{ 
     function index()
     {
      return $this->db->get('instruktur');

@@ -83,8 +83,6 @@ class Crud_instruktur extends CI_Controller{
        $this->form_validation->set_rules('username', 'Nama', 'required|min_length[2]',
         array('min_length'=> '%s Minimal 2 karakter !'));
 
-       $this->form_validation->set_rules('password_instr', 'Password', 'required|min_length[5]',
-       array('min_length'=> '%s Minimal 5 karakter !'));
        $this->form_validation->set_rules('JK_instr', 'Jenis Kelamin', 'required');
 
        $this->form_validation->set_message('required', '%s masih kosong, silahkan isi !');
@@ -102,7 +100,6 @@ class Crud_instruktur extends CI_Controller{
         else {
           $username=$this->input->post('username');
           $email_instr=$this->input->post('email_instr');
-          $password_instr=$this->input->post('password_instr');
           $alamat_instr=$this->input->post('alamat_instr');
           $telp_instr=$this->input->post('telp_instr');
           $TTL_instr=$this->input->post('TTL_instr');
@@ -112,7 +109,6 @@ class Crud_instruktur extends CI_Controller{
           $data = array(
              'username' => $username,
              'email_instr' => $email_instr,
-             'password_instr' => $password_instr,
              'alamat_instr' => $alamat_instr,
              'telp_instr' => $telp_instr,
              'TTL_instr' => $TTL_instr,

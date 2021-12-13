@@ -31,11 +31,6 @@
             <input type="text" name="email_peserta" value="" autocomplete="off">
           </div>
           <div class="form-group">
-            <label>Password *</label>
-            <input type="password" name="password_peserta" value="" autocomplete="off">
-            <span class="error-validasi"><?php echo form_error('password_peserta'); ?></span>
-          </div>
-          <div class="form-group">
             <label>Alamat *</label>
             <textarea name="alamat_peserta" rows="2" cols="1"></textarea>
           </div>

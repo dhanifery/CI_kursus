@@ -35,7 +35,7 @@
                   <th>Email</th>
                   <th>TTL</th>
                   <th>Jenis Kelamin</th>
-                  <th>Honor per jam</th>
+                  <!-- <th>Honor per jam</th> -->
                   <th class="text-center">Option</th>
 
                 </tr>
@@ -60,12 +60,12 @@
                     <td><?php echo $ins->email_instr?></td>
                     <td><?php echo $ins->TTL_instr?></td>
                     <td width="120px;"><?php echo $ins->JK_instr?></td>
-                    <td><?php echo $ins->honor_per_jam?></td>
+                    <!-- <td><?php echo $ins->honor_per_jam?></td> -->
 
                     <td class="text-center" width="150px">
-                      <a href="<?=site_url('Crud_instruktur/edit/'.$ins->id_instr) ?>" class="btn-edit">
+                      <!-- <a href="<?=site_url('Crud_instruktur/edit/'.$ins->id_instr) ?>" class="btn-edit">
                         <i class='bx bxs-edit-alt'></i>edit
-                      </a>
+                      </a> -->
                       <a href="<?=site_url('Crud_instruktur/hapus/'.$ins->id_instr) ?>" onclick="return confirm('Apakah anda yakin ?')"
                         class="btn-hapus">
                         <i class='bx bxs-trash-alt' ></i>delete

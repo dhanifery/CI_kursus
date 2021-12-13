@@ -1,5 +1,16 @@
 <?php
-class User extends CI_Controller{
+class Pembayaran extends CI_Controller{
+
+     function __construct()
+     {
+
+     parent::__construct();
+     $this->load->model('M_pembayaran');
+     $this->load->helper('url');
+
+     }
+
+
 
   public function index()
   {
@@ -24,5 +35,5 @@ class User extends CI_Controller{
   }
 
 
-  
+
 }
