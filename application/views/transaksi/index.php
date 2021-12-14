@@ -8,9 +8,9 @@
     </style>
     <div class="content_2" style="background:#fff;">
       <div class="tambahdata">
-        <a href="<?=base_url('Transaksi/tambah')?>" class="btn-peserta">
+        <!-- <a href="<?=base_url('Transaksi/tambah')?>" class="btn-peserta">
             <i class='bx bxs-user-plus'></i>Tambah
-        </a>
+        </a> -->
         <div class="sub-judul">
           <p>List Transaksi</p>
         </div>
@@ -41,7 +41,7 @@
             <tbody>
               <?php if (empty($transaksi)):?>
               <tr>
-                <td colspan="3" >
+                <td colspan="5" >
                   <div class="alert">
                     <h3>Data not found!</h3>
                   </div>

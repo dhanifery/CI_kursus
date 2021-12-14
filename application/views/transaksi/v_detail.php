@@ -7,7 +7,7 @@
     </style>
     <div class="content_2" style="background:#fff;">
       <div class="tambahdata">
-        <a href="<?=site_url('Crud/index')?>" class="btn-peserta">
+        <a href="<?=site_url('Transaksi/index')?>" class="btn-peserta">
             <i class='bx bx-arrow-back' ></i> Back
         </a>
         <div class="sub-judul">

@@ -1,3 +1,4 @@
+
 <!--Left Side-->
 
   <div class="content_ds">
@@ -18,7 +19,7 @@
      </div>
      <div class="awan_two">
        <div class="cloud_three">
-         <a href="https://mail.google.com/mail/u/0/">Cek Email</a>
+         <a href="<?= base_url('Email'); ?>">Cek Email</a>
        </div>
      </div>
      </div>

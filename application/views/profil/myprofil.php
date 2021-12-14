@@ -9,7 +9,7 @@
               <img class="profil" src="<?= base_url('assets/img/profil/') . $user['image']; ?>"
               alt="user" width="100">
               <h4><?= $user['name']; ?></h4>
-               <p>UI Developer</p>
+               <p>Admin</p>
           </div>
           <div class="right">
               <div class="info">

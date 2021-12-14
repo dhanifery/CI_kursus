@@ -93,7 +93,7 @@ class Crud_peserta extends CI_Controller{
           $this->session->userdata('name')])->row_array();
           $data['peserta'] = $this->M_peserta->index()->result();
           $this->load->view('utama/v_header',$data);
-          $this->load->view('peserta/v_inputpeserta',$data);
+          $this->load->view('kursus/v_kursus',$data);
           $this->load->view('utama/v_footer',$data);
         }
         else {
@@ -114,9 +114,9 @@ class Crud_peserta extends CI_Controller{
           );
           $this->M_peserta->input_data($data, 'peserta');
           if ($this->db->affected_rows() > 0 ) {
-            echo "<script>alert('Data Berhasil disimpan');</script>";
-          }
-          echo "<script>window.location='".site_url('Crud_peserta')."';</script>";
+               echo "<script>alert('Data Berhasil disimpan');</script>";
+             }
+             echo "<script>window.location='".site_url('Crud_peserta')."';</script>";
         }
 
     }

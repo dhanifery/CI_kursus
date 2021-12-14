@@ -74,6 +74,10 @@ class Crud extends CI_Controller{
 
   }
 
+
+
+  
+
     public function tambah()
     {
       $jadwal = new stdClass();
@@ -117,7 +121,7 @@ class Crud extends CI_Controller{
       }
       if ($this->db->affected_rows() > 0 ) {
       }
-      echo "<script>window.location='".site_url('Transaksi/tambah')."';</script>";
+      echo "<script>window.location='".site_url('Crud')."';</script>";
     }
 
     public function detail()

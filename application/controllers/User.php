@@ -1,6 +1,13 @@
 <?php
-class User extends CI_Controller{
+class User extends CI_Controller
+{
 
+
+  public function __construct()
+  {
+     parent::__construct();
+     is_logged_in();
+  }
   public function index()
   {
 
@@ -24,5 +31,16 @@ class User extends CI_Controller{
   }
 
 
-  
+  public function edit()
+  {
+   $data['judul'] = 'Dashboard';
+   $data['user'] = $this->db->get_where('user',['name'=>
+   $this->session->userdata('name')])->row_array();
+   // $data['user'] = $this->M_relasi->get_relasi()->result();
+   $this->load->view('user/v_header',$data);
+   $this->load->view('profil/editprofil',$data);
+   $this->load->view('user/v_footer',$data);
+  }
+
+
 }

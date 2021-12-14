@@ -41,7 +41,7 @@
               <tbody>
                 <?php if (empty($jadwal)):?>
                 <tr>
-                  <td colspan="3" >
+                  <td colspan="5" >
                     <div class="alert">
                       <h3>Data not found!</h3>
                     </div>

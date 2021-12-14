@@ -73,7 +73,7 @@
             <li><a href="<?= base_url('Paket') ?>">Data Paket</a></li>
           </ul>
         </li>
-        <li>
+        <!-- <li>
           <div class="iocn-link">
             <a href="#">
               <i class='bx bxl-discourse'></i>
@@ -83,10 +83,10 @@
           </div>
           <ul class="sub-menu">
             <li><a class="link_name" href="#">Data</a></li>
-            <li><a href="<?php echo base_url() . ''; ?>">Form Data diri</a></li>
-            <li><a href="<?php echo base_url() . ''; ?>">Info Paket</a></li>
+            <li><a href="<?php echo base_url() . 'Crud_peserta/tambah'; ?>">Form Data diri</a></li>
+            <li><a href="<?php echo base_url() . 'Paket'; ?>">Info Paket</a></li>
           </ul>
-        </li>
+        </li> -->
         <li>
           <div class="iocn-link">
             <a href="#">
@@ -97,15 +97,14 @@
           </div>
           <ul class="sub-menu">
             <li><a class="link_name" href="#">Setting</a></li>
-            <li><a href="#">Bantuan Penggunaan</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Edit Profil</a></li>
+            <li><a href="https://drive.google.com/file/d/19WAyG2kLoDOTUUXOrQrKeDMYPAlebDKN/view?usp=sharing   ">Bantuan Penggunaan</a></li>
+            <li><a href="<?=base_url('Admin/edit') ?>">Edit Profil</a></li>
           </ul>
         </li>
         <li>
           <div class="profile-details">
             <div class="profile-content">
-              <!--<img src="image/profile.jpg" alt="profileImg">-->
+
             </div>
             <div class="name-job">
               <div class="profile_name">Log Out</div>
